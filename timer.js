@@ -76,3 +76,5 @@ function padZero(number) {
 document.getElementById('start-btn').addEventListener('click', startTimer);
 document.getElementById('stop-btn').addEventListener('click', stopTimer);
 document.getElementById('reset-btn').addEventListener('click', resetTimer);
+
+
