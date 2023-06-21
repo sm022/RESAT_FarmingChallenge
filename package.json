@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "name": "resat",
+  "description": "<br> <br>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https:\/\/github.com\/sm022\/RESAT_FarmingChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sm022/RESAT_FarmingChallenge/issues"
+  },
+  "homepage": "https://github.com/sm022/RESAT_FarmingChallenge#readme"
+}
