@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>타이머</title>
+	<link rel="stylesheet" href="./client/css/styles.css">
+</head>
+<body>
+  <h1>타이머</h1>
+  <div id="timer-display">
+    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+  </div>
+  <div id="input-container" class="input-container">
+    <input type="number" id="hour-input" placeholder="시간" min="0">
+    <input type="number" id="minute-input" placeholder="분" min="0" max="59">
+    <input type="number" id="second-input" placeholder="초" min="0" max="59">
+  </div>
+  <button id="start-btn">START</button>
+  <button id="stop-btn">STOP</button>
+  <button id="reset-btn">RESET</button>
+
+  <script src="timer.js"></script>
+</body>
+</html>
