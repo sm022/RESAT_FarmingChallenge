@@ -17,9 +17,9 @@
   
  | &nbsp;Project &nbsp;|Day|url|
  |:---:|:---:|:---:|
- |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**클론코딩**&nbsp; &nbsp; &nbsp;| &nbsp;Day 1 &nbsp;|[Clonecoding-Miniintern](https://github.com/sm022/RESAT_FarmingChallenge.git)|
- |   &nbsp;&nbsp;&nbsp; &nbsp;**타이머**&nbsp; &nbsp; &nbsp;| &nbsp;Day 2 &nbsp;|[Timer](https://github.com/sm022/RESAT_FarmingChallenge.git)|
- |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**투두리스트**&nbsp; &nbsp; &nbsp;| &nbsp;Day 3 &nbsp;|[ToDoList](https://github.com/sm022/RESAT_FarmingChallenge.git)|  
+ |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**클론코딩**&nbsp; &nbsp; &nbsp;| &nbsp;Day 1 &nbsp;|[Clonecoding-Miniintern](https://bucolic-salamander-9a9e30.netlify.app/)|
+ |   &nbsp;&nbsp;&nbsp; &nbsp;**타이머**&nbsp; &nbsp; &nbsp;| &nbsp;Day 2 &nbsp;|[Timer](https://thriving-fenglisu-94ab5b.netlify.app/)|
+ |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**투두리스트**&nbsp; &nbsp; &nbsp;| &nbsp;Day 3 &nbsp;|[ToDoList](https://classy-piroshki-3229c8.netlify.app/)|  
 
 </div>
 
