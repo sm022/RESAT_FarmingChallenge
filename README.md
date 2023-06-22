@@ -6,7 +6,9 @@
 # 👩‍🌾FarmingChallenge
 > [투두리스트](https://classy-piroshki-3229c8.netlify.app/)
 
-![TodoList](https://github.com/sm022/RESAT_FarmingChallenge/assets/77651050/749a7d93-48d7-42d2-b889-579494c24362)
+![할 일 목록 - Chrome 2023-06-22 21-32-06 (online-video-cutter com) (1)](https://github.com/sm022/RESAT_FarmingChallenge/assets/77651050/8a6293df-e0c1-47d4-8f1b-c75d9e6c0951)
+
+
 
 
 <br>
