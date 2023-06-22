@@ -1,62 +1,129 @@
 @import url(./fonts.css);
 
-
 body {
-  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-  font-size: 24px; /* 전체 폰트 크기 설정 */
 }
 
-h1 {
-  margin-bottom: 30px;
-  font-size: 48px; /* h1 제목의 크기 설정 */
+.todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-#timer-display {
-  font-size: 72px; /* 타이머 디스플레이의 크기 설정 */
-  margin-bottom: 40px;
-}
-
-#timer-display span {
-  padding: 20px; /* 타이머 디스플레이 숫자의 패딩 설정 */
-  background-color: #f1f1f1;
-  border-radius: 10px;
-}
-
-.input-container {
-  margin-bottom: 40px;
-}
-
-.input-container input {
-  margin-right: 20px;
+.todo-input {
+  flex-grow: 1;
   padding: 10px;
-  width: 70px; /* 입력 필드의 너비 설정 */
-  text-align: center;
-  font-size: 24px; /* 입력 필드의 폰트 크기 설정 */
+  font-size: 16px;
 }
 
-.button-container {
-  margin-bottom: 40px;
+.priority-select {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
 }
 
-.button-container button {
-  margin-right: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
+.add-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  font-size: 24px;
-  width: 200px; /* 버튼의 너비 설정 */
-  height: 60px; /* 버튼의 높이 설정 */
-  box-sizing: border-box; /* 크기 계산 방식 설정 */
 }
 
-.button-container button:hover {
-  background-color: #45a049;
+.filter-container {
+  margin-bottom: 10px;
 }
 
-.button-container button:active {
-  background-color: #3e8e41;
+.filter-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button[data-filter="all"] {
+  margin-right: 5px;
+}
+
+.filter-button[data-filter="completed"] {
+  margin-right: 5px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.todo-item .checkbox {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.todo-item .priority {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.todo-item .priority-low {
+  color: #52c41a;
+}
+
+.todo-item .priority-normal {
+  color: #faad14;
+}
+
+.todo-item .priority-high {
+  color: #f5222d;
+}
+
+.todo-item .priority-very-high {
+  color: #eb2f96;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  color: #1890ff;
+}
+
+.delete-button {
+  color: #f5222d;
+}
+
+.hidden {
+  display: none;
 }
