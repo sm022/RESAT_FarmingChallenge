@@ -6,7 +6,10 @@
 # 👩‍🌾FarmingChallenge
 > [타이머](https://thriving-fenglisu-94ab5b.netlify.app/)
 
-![Timer](https://github.com/sm022/RESAT_FarmingChallenge/assets/77651050/4c25070e-2b22-4b01-8b4b-6b00b08b4664)
+![타이머 - Chrome 2023-06-22 21-00-56 (online-video-cutter com)](https://github.com/sm022/RESAT_FarmingChallenge/assets/77651050/f2fac411-85b5-4688-9d55-6c4866d05175)
+
+
+
 
 
 <br>
