@@ -96,6 +96,32 @@
     }
 
 
+
+    // Show Memo without the Form
+function showMemo() {
+  if (selectedDate) {
+    const dateString = selectedDate.toISOString().split('T')[0];
+    const memoContent = memoData[dateString] || '';
+
+    memoOverlay.style.display = 'flex';
+
+    if (memoContent) {
+      // Memo exists for selected date
+      memoTextarea.value = memoContent;
+      memoTextarea.readOnly = true;
+      saveMemoButton.style.display = 'none'; // Hide the save button
+      editMemoButton.style.display = 'inline-block'; // Show the edit button
+    } else {
+      // No memo for selected date
+      memoTextarea.value = '';
+      memoTextarea.readOnly = false;
+      saveMemoButton.style.display = 'inline-block'; // Show the save button
+      editMemoButton.style.display = 'none'; // Hide the edit button
+    }
+  }
+}
+
+
         // Select Date
 function selectDate(dayElement) {
   const day = parseInt(dayElement.textContent);
@@ -107,34 +133,16 @@ function selectDate(dayElement) {
 
   if (memoData[selectedDate.toISOString().split('T')[0]]) {
     // Memo exists for selected date
-    editMemoButton.style.display = 'inline-block'; // Show the edit button
-    if (editMode) {
-      // In edit mode, show the memo form
-      openMemoDialog();
-    } else {
-      // Not in edit mode, show the memo without the form
-      showMemo();
-    }
+    editMode = true; // Set editMode to true
+    openMemoDialog();
   } else {
     // No memo for selected date
     editMode = false; // Set editMode to false
-    editMemoButton.style.display = 'none'; // Hide the edit button
     openMemoDialog();
   }
 }
 
-// Show Memo without the Form
-function showMemo() {
-  if (selectedDate) {
-    const dateString = selectedDate.toISOString().split('T')[0];
-    const memoContent = memoData[dateString] || '';
-    memoTextarea.value = memoContent;
-    memoTextarea.readOnly = true;
-    saveMemoButton.style.display = 'none';
-    editMemoButton.style.display = 'inline-block';
-    memoOverlay.style.display = 'flex';
-  }
-}
+
 
         // Open Memo Dialog
 function openMemoDialog() {
@@ -155,21 +163,30 @@ function openMemoDialog() {
 
 
       // Edit Memo
-  function editMemo() {
-    if (selectedDate) {
-      const dateString = selectedDate.toISOString().split('T')[0];
-      const memoContent = memoData[dateString] || '';
+function editMemo() {
+  if (selectedDate) {
+    const dateString = selectedDate.toISOString().split('T')[0];
+    const memoContent = memoData[dateString] || '';
 
-      memoTextarea.value = memoContent;
-      memoTextarea.readOnly = true;
-      saveMemoButton.style.display = 'inline-block';
-      editMemoButton.style.display = 'none';
+    memoTextarea.value = memoContent;
+    memoTextarea.readOnly = false; // Set readOnly to false
+    saveMemoButton.style.display = 'inline-block'; // Show the save button
+    editMemoButton.style.display = 'none'; // Hide the edit button
 
-      memoOverlay.style.display = 'flex';
-      memoTextarea.focus();
+    editMode = true; // Set editMode to true
 
-    }
+    memoOverlay.style.display = 'flex';
+    memoTextarea.focus();
   }
+}
+
+
+
+
+
+
+
+
 
 
 
