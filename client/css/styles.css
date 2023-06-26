@@ -1,62 +1,123 @@
 @import url(./fonts.css);
 
-
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  font-size: 24px; /* 전체 폰트 크기 설정 */
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  margin-bottom: 30px;
-  font-size: 48px; /* h1 제목의 크기 설정 */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-#timer-display {
-  font-size: 72px; /* 타이머 디스플레이의 크기 설정 */
-  margin-bottom: 40px;
+.calendar {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-#timer-display span {
-  padding: 20px; /* 타이머 디스플레이 숫자의 패딩 설정 */
-  background-color: #f1f1f1;
-  border-radius: 10px;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.input-container {
-  margin-bottom: 40px;
-}
-
-.input-container input {
-  margin-right: 20px;
-  padding: 10px;
-  width: 70px; /* 입력 필드의 너비 설정 */
-  text-align: center;
-  font-size: 24px; /* 입력 필드의 폰트 크기 설정 */
-}
-
-.button-container {
-  margin-bottom: 40px;
-}
-
-.button-container button {
-  margin-right: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
+.arrow {
+  background-color: transparent;
   border: none;
-  border-radius: 10px;
+  font-size: 18px;
+  padding: 0;
   cursor: pointer;
-  font-size: 24px;
-  width: 200px; /* 버튼의 너비 설정 */
-  height: 60px; /* 버튼의 높이 설정 */
-  box-sizing: border-box; /* 크기 계산 방식 설정 */
 }
 
-.button-container button:hover {
+.current-month {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.memo-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.memo-dialog {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.memo-textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.save-memo,
+.close-dialog,
+.edit-memo {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-memo:hover,
+.close-dialog:hover,
+.edit-memo:hover {
   background-color: #45a049;
 }
 
-.button-container button:active {
-  background-color: #3e8e41;
+.memo-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-left: 4px;
+  z-index: 2; /* Add this line to adjust the stacking order */
+}
+
+.has-memo::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: auto;
 }
