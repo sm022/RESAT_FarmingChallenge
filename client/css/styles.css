@@ -1,123 +1,71 @@
 @import url(./fonts.css);
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.calendar {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-.header {
+.carousel-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
 }
 
 .arrow {
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
-  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: transparent; /* 화살표 배경을 투명하게 설정합니다 */
   cursor: pointer;
-}
-
-.current-month {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.calendar-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.calendar-table th,
-.calendar-table td {
-  padding: 10px;
-  text-align: center;
-}
-
-.memo-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  align-items: center;
-  justify-content: center;
 }
 
-.memo-dialog {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.arrow.left {
+  left: 10px;
 }
 
-.memo-textarea {
-  width: 100%;
-  height: 100px;
-  resize: vertical;
-  margin-bottom: 10px;
+.arrow.right {
+  right: 10px;
 }
 
-.dialog-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 2px;
+  background-color: white; /* 화살표 색상을 하얀색으로 설정합니다 */
+  transform: translateY(-50%);
 }
 
-.save-memo,
-.close-dialog,
-.edit-memo {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
+.arrow.left::before {
+  transform: rotate(-215deg) translate(-50%, -50%); /* 왼쪽 화살표의 회전 및 위치 조정 */
 }
 
-.save-memo:hover,
-.close-dialog:hover,
-.edit-memo:hover {
-  background-color: #45a049;
+.arrow.left::after {
+  transform: rotate(-135deg) translate(-50%, -50%); /* 왼쪽 화살표의 회전 및 위치 조정 */
 }
 
-.memo-indicator {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-color: blue;
-  border-radius: 50%;
-  margin-left: 4px;
-  z-index: 2; /* Add this line to adjust the stacking order */
+.arrow.right::before {
+  transform: rotate(45deg) translate(-50%, -50%); /* 오른쪽 화살표의 회전 및 위치 조정 */
 }
 
-.has-memo::before {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: blue;
-  border-radius: 50%;
-  margin: auto;
+.arrow.right::after {
+  transform: rotate(-45deg) translate(-50%, -50%); /* 오른쪽 화살표의 회전 및 위치 조정 */
 }
+
+
+
+
