@@ -7,7 +7,7 @@
 > [Carousel🎠](https://relaxed-pegasus-da49da.netlify.app/)
 
 
-![Carousel - Chrome 2023-06-26 20-10-04 (online-video-cutter com)](https://github.com/sm022/RESAT_FarmingChallenge/assets/77651050/b7d4374b-1b27-47cf-8df7-9bfeed4b72c6)
+![Carousel - Chrome 2023-06-26 20-21-47 (online-video-cutter com)](https://github.com/sm022/RESAT_FarmingChallenge/assets/77651050/9bafbe93-ceb3-4bc5-9073-b45b33c24fb8)
 
 
 📌Feature
