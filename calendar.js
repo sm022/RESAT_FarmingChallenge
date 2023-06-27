@@ -172,7 +172,7 @@ function editMemo() {
     localStorage.setItem('memoData', JSON.stringify(memoData));
   }
 
-      // 메모창 닫
+      // 메모창 닫기기
       function closeMemoDialog() {
         memoOverlay.style.display = 'none';
         memoTextarea.value = '';
