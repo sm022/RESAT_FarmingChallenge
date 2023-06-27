@@ -4,43 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./client/css/styles.css">
-    <title>달력</title>
+    <title>Carousel</title>
 </head>
 <body>
-    <div class="container">
-        <div class="calendar">
-            <div class="header">
-                <button class="arrow prev-month">◀</button>
-                <div class="current-month"></div>
-                <button class="arrow next-month">▶</button>
-            </div>
-            <table class="calendar-table">
-                <thead>
-                    <tr>
-                        <th>일</th>
-                        <th>월</th>
-                        <th>화</th>
-                        <th>수</th>
-                        <th>목</th>
-                        <th>금</th>
-                        <th>토</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <img src="./client/images/image1.jpg" alt="Image 1">
+          <img src="./client/images/image2.png" alt="Image 2">
+          <img src="./client/images/image3.jpg" alt="Image 3">
+          <!-- 추가 이미지를 여기에 추가할 수 있습니다 -->
         </div>
-        <div class="memo-overlay">
-            <div class="memo-dialog">
-                <textarea class="memo-textarea"></textarea>
-                <div class="dialog-buttons">
-                    <button class="save-memo">저장</button>
-                    <button class="edit-memo">수정</button> 
-                    <button class="close-dialog">닫기</button>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="arrow left"></div>
+      <div class="arrow right"></div>
     </div>
-
-    <script src="/calendar.js"></script>
-</body>
+  
+    <script src="./carousel.js"></script>
+  </body>
 </html>
