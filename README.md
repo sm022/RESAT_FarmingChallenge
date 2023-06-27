@@ -21,7 +21,7 @@
  |   &nbsp;&nbsp;&nbsp; &nbsp;**타이머**&nbsp; &nbsp; &nbsp;| &nbsp;Day 2 &nbsp;|[Timer](https://github.com/sm022/RESAT_FarmingChallenge/tree/Timer)|
  |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**투두리스트**&nbsp; &nbsp; &nbsp;| &nbsp;Day 3 &nbsp;|[ToDoList](https://github.com/sm022/RESAT_FarmingChallenge/tree/TodoList)|  
  |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**달력**&nbsp; &nbsp; &nbsp;| &nbsp;Day 4 &nbsp;|[Calendar](https://github.com/sm022/RESAT_FarmingChallenge/tree/Calendar)|  
- |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**캐러셀**&nbsp; &nbsp; &nbsp;| &nbsp;Day 5 &nbsp;|[Carousel](https://github.com/sm022/RESAT_FarmingChallenge/tree/Carousel)| 
+ |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**캐러셀**&nbsp; &nbsp; &nbsp;| &nbsp;Day 5~7&nbsp;|[Carousel](https://github.com/sm022/RESAT_FarmingChallenge/tree/Carousel)| 
 
 </div>
 
