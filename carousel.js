@@ -32,14 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
   prevArrow.addEventListener("click", slidePrev);
   
   // 자동 슬라이드 기능 추가
-  let timer = setInterval(slideNext, 2000); // 2초 간격으로 슬라이드
+  let timer = setInterval(slideNext, 1000); // 2초 간격으로 슬라이드
   
-  // 마우스가 캐러셀 영역에 진입하면 타이머 정지, 이탈하면 다시 시작
-  carousel.addEventListener("mouseenter", function() {
-    clearInterval(timer);
-  });
-  
-  carousel.addEventListener("mouseleave", function() {
-    timer = setInterval(slideNext, 2000);
-  });
 });
