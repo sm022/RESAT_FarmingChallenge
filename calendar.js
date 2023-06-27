@@ -1,6 +1,6 @@
       document.addEventListener('DOMContentLoaded', function() {
 
-        // "has-memo" 클래스를 가진 모든 요소를 선택하고 클래스 추
+        // "has-memo" 클래스를 가진 모든 요소를 선택하고 클래스 추가
       const memoCells = document.querySelectorAll('.calendar-table td.has-memo');
       memoCells.forEach(cell => {
         cell.classList.add('has-memo');
