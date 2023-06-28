@@ -1496,7 +1496,7 @@ data-styled.g17[id="sc-68db2034-1"] {
 .iGPGDP ul a {
 	-webkit-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
-	font-weight: 700;
+	font-weight: 400;
 }
 .iGPGDP ul a:hover {
 	color: #0f1313;
@@ -3841,8 +3841,8 @@ data-styled.g29[id="sc-eea36781-0"] {
 }
 
 .dLQsLd .recruitment-card-info-wrapper .recruitment-card-info-emplyment-type-wrapper .recruitment-card-info-emplyment-type {
-	width: 45;
-	height: 20;
+	width: 45px;
+	height: 20px;
 	border-radius: 5px;
 	background-color: rgb(241, 249, 255);
 	color: rgb(23, 161, 255);
@@ -3855,8 +3855,8 @@ data-styled.g29[id="sc-eea36781-0"] {
 }
 
 .dLQsLd .recruitment-card-info-wrapper .recruitment-card-info-emplyment-type-wrapper-wrapper .recruitment-card-info-emplyment-type {
-	width: 35;
-	height: 20;
+	width: 35px;
+	height: 20px;
 	border-radius: 5px;
 	background-color: rgb(241, 249, 255);
 	color: rgb(23, 161, 255);
@@ -3916,20 +3916,20 @@ data-styled.g29[id="sc-eea36781-0"] {
 	box-sizing: border-box; 
 	display: block; 
 	overflow: hidden; 
-	width: initial; 
-	height: initial; 
+	width: 100px; 
+	height: 100px; 
 	background: none; 
 	opacity: 1; 
 	border: 0px; 
 	margin: 0px; 
 	padding: 0px; 
-	position: absolute; 
+	position: relative; 
 	inset: 0px;
 }
 
 .Vlmd{
 	border-radius: 5px;
-	position: absolute;
+	position: relative;
 	inset: 0px;
 	box-sizing: border-box;
 	padding: 0px;
