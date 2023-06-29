@@ -22,7 +22,7 @@
  |   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**[투두리스트](https://github.com/sm022/RESAT_FarmingChallenge/tree/TodoList)**&nbsp; &nbsp; &nbsp;| &nbsp;Day 3 &nbsp;|[ToDoList](https://classy-piroshki-3229c8.netlify.app/)|  
  |   &nbsp;&nbsp;&nbsp; &nbsp; **[달력](https://github.com/sm022/RESAT_FarmingChallenge/tree/Calendar)**&nbsp; &nbsp; &nbsp;| &nbsp;Day 4 &nbsp;|[Calendar](https://benevolent-dango-3b8cc1.netlify.app/)|  
  |   &nbsp;&nbsp;&nbsp; &nbsp;**[캐러셀](https://github.com/sm022/RESAT_FarmingChallenge/tree/Carousel)**&nbsp; &nbsp; &nbsp;| &nbsp;Day 5~7&nbsp;|[Carousel](https://relaxed-pegasus-da49da.netlify.app/)| 
- |   &nbsp;&nbsp;&nbsp; &nbsp;**[반응형 네비바](https://github.com/sm022/RESAT_FarmingChallenge/tree/Navbar)**&nbsp; &nbsp; &nbsp;| &nbsp;Day 5~7&nbsp;|[Navbar](https://relaxed-pegasus-da49da.netlify.app/)| 
+ |   &nbsp;&nbsp;&nbsp; &nbsp;**[반응형 네비바](https://github.com/sm022/RESAT_FarmingChallenge/tree/Navbar)**&nbsp; &nbsp; &nbsp;| &nbsp;Day 5~7&nbsp;|[Navbar](https://cute-hotteok-02216b.netlify.app/)| 
 
 </div>
 
