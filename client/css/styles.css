@@ -1,70 +1,156 @@
 @import url(./fonts.css);
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.carousel-wrapper {
+nav {
+  background-color: #333;
+  height: 80px;
   display: flex;
-  transition: transform 0.3s ease;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
 }
 
-.carousel {
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
   display: flex;
 }
 
-.carousel img {
-  width: 100%;
-  height: auto;
+.nav-links li {
+  list-style: none;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-color: transparent; /* 화살표 배경을 투명하게 설정합니다 */
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.burger {
+  display: none;
   cursor: pointer;
-  z-index: 1;
 }
 
-.arrow.left {
-  left: 10px;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
-.arrow.right {
-  right: 10px;
+.side-nav {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-.arrow::before,
-.arrow::after {
-  content: "";
+
+.side-nav.active {
+  right: 0;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 20px 0;
+}
+
+.side-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  color: #aaa;
+}
+
+.close-icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: 12px;
-  height: 2px;
-  background-color: white; /* 화살표 색상을 하얀색으로 설정합니다 */
-  transform: translateY(-50%);
+  top: 20px; 
+  right: 20px; 
 }
 
-.arrow.left::before {
-  transform: rotate(-215deg) translate(-50%, -50%); /* 왼쪽 화살표의 회전 및 위치 조정 */
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .nav-links li {
+      text-align: center;
+      margin: 20px 0;
+  }
+
+  .burger {
+      display: block;
+  }
+
+  .side-nav {
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100vh;
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+  }
+
+  .side-nav.active {
+      right: 0;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 15px 0;
+  }
+
+  .nav-links li a {
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+      color: #aaa;
+  }
 }
 
-.arrow.left::after {
-  transform: rotate(-135deg) translate(-50%, -50%); /* 왼쪽 화살표의 회전 및 위치 조정 */
-}
 
-.arrow.right::before {
-  transform: rotate(45deg) translate(-50%, -50%); /* 오른쪽 화살표의 회전 및 위치 조정 */
-}
 
-.arrow.right::after {
-  transform: rotate(-45deg) translate(-50%, -50%); /* 오른쪽 화살표의 회전 및 위치 조정 */
-}
 
 
 
