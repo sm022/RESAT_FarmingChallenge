@@ -1,153 +1,55 @@
 @import url(./fonts.css);
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-nav {
-  background-color: #333;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
+h1 {
+  text-align: center;
 }
 
-.logo a {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-.side-nav {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #111;
+form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  transition: all 0.3s ease;
 }
 
-
-.side-nav.active {
-  right: 0;
+label {
+  margin-bottom: 10px;
 }
 
-.side-nav ul {
-  list-style: none;
-  padding: 0;
+input {
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-.side-nav ul li {
-  margin: 20px 0;
-}
-
-.side-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: all 0.3s ease;
-}
-
-.side-nav ul li a:hover {
-  color: #aaa;
-}
-
-.close-icon {
-  color: #fff;
-  font-size: 24px;
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
   cursor: pointer;
-  position: absolute;
-  top: 20px; 
-  right: 20px; 
 }
 
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-      display: none;
-  }
-
-  .nav-links li {
-      text-align: center;
-      margin: 20px 0;
-  }
-
-  .burger {
-      display: block;
-  }
-
-  .side-nav {
-      top: 0;
-      right: -250px;
-      width: 250px;
-      height: 100vh;
-      background-color: #111;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s ease;
-  }
-
-  .side-nav.active {
-      right: 0;
-  }
-
-  .nav-links {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .nav-links li {
-      margin: 15px 0;
-  }
-
-  .nav-links li a {
-      font-size: 24px;
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-  }
-
-  .nav-links li a:hover {
-      color: #aaa;
-  }
+#notification {
+  text-align: center;
+  margin-bottom: 10px;
+  display: none;
 }
+
+.toast {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 
 
