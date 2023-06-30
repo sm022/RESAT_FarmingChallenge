@@ -10,9 +10,9 @@ loginForm.addEventListener('submit', function(e) {
   if (username === '' || password === '') {
     showNotification('Please enter both username and password.', 'error');
   } else if (username === 'challenger' && password === 'complete') {
-    showNotification('Login successful.', 'success');
+    showNotification('로그인 되었습니다.', 'success');
   } else {
-    showNotification('Incorrect username or password.', 'error');
+    showNotification('ID 혹은 Password가 잘못되었습니다.', 'error');
   }
 
   loginForm.reset();
